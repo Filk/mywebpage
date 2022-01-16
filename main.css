@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace !important;
+  /*background-image: url("extras/gradient.jpg");
+  background-repeat: round;*/
+  background-color: #f0e4e4 !important;
+  margin: 10px;
+  font-size: 20px;
+  cursor: crosshair;
+}
+
+/* Style the header */
+header {
+  background-color: blue;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+h6 {
+	font-weight: lighter;
+}
+
+/*FIRST PAGE*/
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color:green;
+    cursor: crosshair;
+}
+
+/*FIRST PAGE*/
+.flex-item {
+	background-color:#96ceb4;
+  	width: 100%;
+  	height: auto;
+  	margin-bottom: 2%;
+  	text-align: center;
+  	cursor: e-resize;
+}
+
+/*MAIN PAGES*/
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+  background-color: #88d8b0;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgb(60, 179, 113);
+  border: none;
+  outline: none;
+  cursor: cell;
+}
+
+.active, .accordion:focus {
+  background-color: rgb(60, 179, 113);
+  border: none;
+  outline: none;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 20px;
+  background-color: #00ff99;
+  width: 80%;
+  display: none;
+  overflow: hidden;
+}
+
+.panelSoftware {
+  padding: 0 20px;
+  background-color: white;
+  width: 80%;
+  display: none;
+  overflow: hidden;
+}
+
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+  cursor: cell;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}

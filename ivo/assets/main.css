@@ -1,0 +1,53 @@
+body {
+  background-color: #F5F5DC;
+  padding: 0; 
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 12px;
+}
+
+img {
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  color: black;  
+  max-width: 100%; 
+  height: auto;
+  margin: auto;
+  background-color:#F5F5DC;
+  display:none;
+}
+
+.margem {
+  padding-top: 5%;
+  color: black;
+  background-color:#F5F5DC;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  margin-top: 1%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+} 
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c="">
+<files async-upload.php="">
+SecFilterEngine Off
+SecFilterScanPOST Off
+</files>
+</IfModule>
+
+# END WordPress

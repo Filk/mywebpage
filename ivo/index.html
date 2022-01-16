@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consolatio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body onload="meuAviso()">
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-md-1">
+      <div class="margem">
+        
+      </div>
+    </div>
+    <div class="col-md-10">
+
+        <h1>CAECUS</h1>
+        <br>
+
+        <img src="data/mapa.png" id ="mapa" onmousemove="myCoordinates(event)" onmouseleave="soAmbiente(this)">
+
+        <audio id="somAmbiente" loop>
+          <source src="data/ambiente.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+       <audio id="quarto1" loop>
+          <source src="data/quarto1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+ 
+        <audio id="quarto2" loop>
+          <source src="data/quarto2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <audio id="quarto3" loop>
+          <source src="data/quarto3.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        
+    </div>
+    <div class="col-md-1">
+      <div class="margem">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <br>
+    <button class="button" id="botaoComeca" onclick="startSound()">START</button>
+    <h1></h1>
+    <p>trabalho final de licenciatura em TCAV - ESMAD - 2020</p>
+    <p>conceito, história e sons: PEDRO IVO CAIRES</p>
+    <p>software: FILIPE LOPES</p>
+</footer>
+
+<script src="ivo.js"></script>
+
+</body>
+</html>
